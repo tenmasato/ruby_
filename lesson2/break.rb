@@ -1,6 +1,9 @@
-numbers = [1,2,3,4,5].shuffle
-numbers.each do |n|
-  puts n
-  #5が出たら繰り返しを脱出する
-  break if n == 5
+fruits = ['apple','melon','orange']
+numbers = [1,2,3]
+fruits.each do |fruit|
+  #配列の数字をランダムに入れ替え、3がでたらbreakする
+  numbers.shuffle.each do |n|
+    puts "#{fruit}, #{n}"
+    break if n == 3
+  end
 end
