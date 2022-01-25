@@ -1,9 +1,7 @@
-#文字列をハッシュのキーにする
-currencies = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
-#文字列を使って値を取り出す
-currencies['japan']
-
-#シンボルをハッシュのキーにする
+#ハッシュのキーをシンボルにする
 currencies = {:japan => 'yen', :us => 'dollar', :india => 'rupee' }
 #シンボルを使って値を取り出す(文字列よりも高速)
-currencies[:japan]
+currencies[:us]
+
+#新しいキーと値をの組み合わせを追加する
+currencies[:italy] = 'euro'
