@@ -1,3 +1,2 @@
-currencies = { 'japan' => 'yen', 'us' => 'dollar', 'india' => 'rupee' }
-
-puts currencies['india']
+#空のハッシュを作成しそのクラス名を確認
+{}.class
