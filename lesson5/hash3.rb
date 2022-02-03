@@ -1,7 +1,14 @@
-#文字列のキーとハッシュのキーを混在させる
-hash = { 'abc' => 123, def: 456}
+person = {
+  #値が文字列
+  name: 'Alice',
+  #値が数値
+  age: 20,
+  #値が配列
+  friends: ['Bob', 'Carol'],
+  #値がハッシュ
+  phones: { home: '1234-0000', mobile: '5678-0000'}
+}
 
-#値を取得する場合はデータ型を合わせてキーを指定する
-puts hash['abc']
-
-puts hash[:def]
+puts person[:age]
+puts person[:friends]
+puts person[:phones][:mobile]
