@@ -1,6 +1,7 @@
-h = {us: 'dollar', india: 'rupee' }
-#変数のキーと値を**で展開させる
-{japan: 'yen', **h}
+#ハッシュを引数として受け取り,類似キーワード引数を実現する
+def buy_burger(menu,options = {})
+  drink = options[:drink]
+  potato = options[:potato]
+end
 
-#**をつけないと構文エラーになる
-{japan: 'yen',h}
+puts buy_burger('cheese',drink: true,potato: true)
